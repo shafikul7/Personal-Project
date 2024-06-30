@@ -1,9 +1,16 @@
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
+import SearchTask from "./components/SearchTask/SearchTask";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-4xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <Header></Header>
+      <Hero></Hero>
+      <SearchTask></SearchTask>
+      <Footer></Footer>
+    </>
   );
 };
 
