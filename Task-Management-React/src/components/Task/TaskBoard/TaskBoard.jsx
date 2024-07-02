@@ -7,7 +7,13 @@ const TaskBoard = () => {
   const [task, setTask] = useState([]);
 
   const defaultTask = {
-    id: Crypto.randomUUID(),
+    'id': Crypto.randomUUID(),
+    'title':'Learning React',
+    'description':'I want to learn react such that I can treat it like my slave and make it do whatever i want to do',
+    'tags':['web','react','js'],
+    'priority':'High',
+    'isFavorite':true
+
   };
   return (
     <div>
