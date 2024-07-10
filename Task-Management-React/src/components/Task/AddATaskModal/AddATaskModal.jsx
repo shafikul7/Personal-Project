@@ -5,7 +5,7 @@ import { useState } from "react";
 const AddTaskModal = ({ onSave, taskToUpdate, onCloseClick }) => {
   const [task, setTask] = useState(
     taskToUpdate || {
-      id: crypto.randomUUID(),
+      id: crypto.randomUUID,
       title: "",
       description: "",
       tags: [],
