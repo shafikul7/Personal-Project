@@ -1,6 +1,10 @@
 import { useState } from "react";
-const SearchTask = () => {
+const SearchTask = ({ onSearch }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  function handleClick(event) {
+    event.preventDefault();
+    onSearch(searchTerm);
+  }
   return (
     <>
       <form>
@@ -18,6 +22,7 @@ const SearchTask = () => {
             <button
               type="submit"
               className="absolute right-2 top-0 h-full rounded-e-lg text-white md:right-4"
+              onClick={handleClick}
             >
               <svg
                 className="h-4 w-4"
