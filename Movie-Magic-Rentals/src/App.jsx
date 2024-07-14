@@ -1,11 +1,20 @@
-import React from "react";
+import MovieList from "./components/cine/MovieList/MovieList";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <h1 className="text-6xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <Header></Header>
+      <main>
+        <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
+          <Sidebar></Sidebar>
+          <MovieList></MovieList>
+        </div>
+      </main>
+      <Footer></Footer>
+    </>
   );
 };
 
