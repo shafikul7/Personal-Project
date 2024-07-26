@@ -6,7 +6,6 @@
 // console.log(person);
 // console.log(person.email);
 
-``;
 // Create class
 // class Person {}
 // // Create class inti object
