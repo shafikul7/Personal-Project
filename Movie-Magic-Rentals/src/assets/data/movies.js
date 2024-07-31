@@ -51,12 +51,6 @@ const data = [
   },
 ];
 
-// function getAllMovies() {
-//     return data;
-// }
-
-// export { getAllMovies };
-
 export const getAllMovies = () => {
   return data;
 };
